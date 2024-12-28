@@ -49,8 +49,6 @@
     animation: slide 500ms ease forwards;
 }
 
-
-
 @keyframes slide {
     0% {
         transform: translate(-110%) skewX(-20deg);

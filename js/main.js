@@ -13,6 +13,12 @@ renderMsg(msg);
 
 $("#new-counter-form").onsubmit = createNewCounter;
 
+function handleOpenCreateSection() {
+    $("#custom_page").classList.add('active');
+    $("#msg-input").focus();
+    $("#msg-input").select();
+}
+
 function triggerShare() {
     window.navigator.share({
         title: msg + " - Countdown",

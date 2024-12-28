@@ -16,17 +16,25 @@
         <link rel="stylesheet" href="/style/digit.css" />
         <link rel="stylesheet" href="/style/app.css" />
         <meta name="google-site-verification" content="Ge7fomK8okwU6ayD7aETWSjWAnWCxkZrX7vou_soiCE" />
+        <style>
+            .ml13 {
+                text-transform: uppercase;
+                letter-spacing: 0.5em;
+                font-weight: 600;
+            }
+
+            .ml13 .letter {
+                display: inline-block;
+                line-height: 1em;
+            }
+        </style>
     </head>
 
     <body class="">
         <div class="app">
             <main>
                 <div class="message">
-                    <h1 class="ml15" id="msg-display">
-                        <span class="word">New</span>
-                        <span class="word">Year</span>
-                        <span class="word">2024</span>
-                    </h1>
+                    <h1 class="ml13" id="msg-display">Rising Strong</h1>
                 </div>
 
                 <div class="countdown-display">
@@ -115,23 +123,19 @@
             </main>
 
             <div class="menu-btns">
-                <div class="btn" onclick="custom_page.classList.add('active');">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"
-                        />
-                    </svg>
-                </div>
-
-                <div class="btn" onclick="triggerShare();">
+                <button class="btn" onclick="triggerShare();">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-share-fill" viewBox="0 0 16 16">
                         <path
                             d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"
                         />
                     </svg>
-                </div>
+                </button>
 
-                <div class="dbl-icon btn" onclick="toggleFullScreen(this);">
+                <button class="button-85" role="button" onclick="handleOpenCreateSection();">
+                    <p>Create Your Own ✨</p>
+                </button>
+
+                <button class="dbl-icon btn" onclick="toggleFullScreen(this);">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-fullscreen" viewBox="0 0 16 16">
                         <path
                             d="M1.5 1a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4A1.5 1.5 0 0 1 1.5 0h4a.5.5 0 0 1 0 1h-4zM10 .5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 16 1.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5zM.5 10a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 0 14.5v-4a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v4a1.5 1.5 0 0 1-1.5 1.5h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5z"
@@ -149,14 +153,14 @@
                             d="M5.5 0a.5.5 0 0 1 .5.5v4A1.5 1.5 0 0 1 4.5 6h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5zm5 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 10 4.5v-4a.5.5 0 0 1 .5-.5zM0 10.5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 6 11.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5zm10 1a1.5 1.5 0 0 1 1.5-1.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4z"
                         />
                     </svg>
-                </div>
+                </button>
             </div>
 
             <section id="custom_page" class="custom-page">
                 <div class="cont">
                     <form id="new-counter-form">
                         <div class="top">
-                            <h4>Create your own countdown..</h4>
+                            <h4 class="custom-page-title">Create your own countdown ✨</h4>
                             <div class="close-logo" onclick="hideCreatePage();">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -183,7 +187,9 @@
                             <label for="date-input">Date-Time</label>
                         </div>
 
-                        <button type="submit">Create</button>
+                        <button style="width: 100%; margin-top: 1rem;" class="button-85" role="button" type="submit">
+                            <p>Launch Countdown 🚀</p>
+                        </button>
                     </form>
                 </div>
             </section>
@@ -196,22 +202,27 @@
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
         <script>
+            var textWrapper = document.querySelector(".ml13");
+            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
             anime
                 .timeline({ loop: true })
                 .add({
-                    targets: ".ml15 .word",
-                    scale: [14, 1],
+                    targets: ".ml13 .letter",
+                    translateY: [100, 0],
+                    translateZ: 0,
                     opacity: [0, 1],
-                    easing: "easeOutCirc",
-                    duration: 800,
-                    delay: (el, i) => 800 * i,
+                    easing: "easeOutExpo",
+                    duration: 1400,
+                    delay: (el, i) => 300 + 30 * i,
                 })
                 .add({
-                    targets: ".ml15",
-                    opacity: 0,
-                    duration: 1000,
-                    easing: "easeOutExpo",
-                    delay: 1000,
+                    targets: ".ml13 .letter",
+                    translateY: [0, -100],
+                    opacity: [1, 0],
+                    easing: "easeInExpo",
+                    duration: 1200,
+                    delay: (el, i) => 100 + 30 * i,
                 });
         </script>
     </body>
