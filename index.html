@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#000" />
+        <meta name="description" content="Create your own countdown NOW!" />
+        <meta name="robots" content="index, follow" />
+        <meta
+            name="keywords"
+            content="ashim das, online countdown, count down, countdown, any date countdown, custom countdown, new year 2024 countdown, new year countdown, happy new year countdown, happy new year, countdown to any date"
+        />
+        <meta name="google-site-verification" content="Zk_nnmY1lPEr-1tUKkqTM0nu5_vpYnSnTPZUVqHtkts" />
+        <title>Countdown</title>
+        <link rel="stylesheet" href="./style/digit.css" />
+        <link rel="stylesheet" href="./style/app.css" />
+    </head>
+
+    <body class="">
+        <div class="app">
+            <main>
+                <div class="message">
+                    <h1 class="ml15" id="msg-display">
+                        <span class="word">New</span>
+                        <span class="word">Year</span>
+                        <span class="word">2024</span>
+                    </h1>
+                </div>
+
+                <div class="countdown-display">
+                    <div class="day-hour-cont">
+                        <div>
+                            <h5 class="number" id="day-display">0</h5>
+                            <h6 id="day-text-display">day</h6>
+                        </div>
+
+                        <div class="hour-cont">
+                            <h5 class="number" id="hour-display">0</h5>
+                            <h6 id="hour-text-display">hour</h6>
+                        </div>
+                    </div>
+
+                    <div class="min-sec">
+                        <div class="min-cont">
+                            <div class="digit-cont">
+                                <div id="min-digit-1" class="sliding-digit" data-digit="0">
+                                    <p style="position: relative; opacity: 0">0</p>
+                                    <p>0</p>
+                                    <p>1</p>
+                                    <p>2</p>
+                                    <p>3</p>
+                                    <p>4</p>
+                                    <p>5</p>
+                                    <p>6</p>
+                                    <p>7</p>
+                                    <p>8</p>
+                                    <p>9</p>
+                                </div>
+
+                                <div id="min-digit-2" class="sliding-digit" data-digit="0">
+                                    <p style="position: relative; opacity: 0">0</p>
+                                    <p>0</p>
+                                    <p>1</p>
+                                    <p>2</p>
+                                    <p>3</p>
+                                    <p>4</p>
+                                    <p>5</p>
+                                    <p>6</p>
+                                    <p>7</p>
+                                    <p>8</p>
+                                    <p>9</p>
+                                </div>
+                            </div>
+
+                            <h6>min</h6>
+                        </div>
+
+                        <div class="sec-cont">
+                            <div class="digit-cont">
+                                <div id="sec-digit-1" class="sliding-digit" data-digit="0">
+                                    <p style="position: relative; opacity: 0">0</p>
+                                    <p>0</p>
+                                    <p>1</p>
+                                    <p>2</p>
+                                    <p>3</p>
+                                    <p>4</p>
+                                    <p>5</p>
+                                    <p>6</p>
+                                    <p>7</p>
+                                    <p>8</p>
+                                    <p>9</p>
+                                </div>
+
+                                <div id="sec-digit-2" class="sliding-digit" data-digit="0">
+                                    <p style="position: relative; opacity: 0">0</p>
+                                    <p>0</p>
+                                    <p>1</p>
+                                    <p>2</p>
+                                    <p>3</p>
+                                    <p>4</p>
+                                    <p>5</p>
+                                    <p>6</p>
+                                    <p>7</p>
+                                    <p>8</p>
+                                    <p>9</p>
+                                </div>
+                            </div>
+
+                            <h6>sec</h6>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <div class="menu-btns">
+                <div class="btn" onclick="custom_page.classList.add('active');">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"
+                        />
+                    </svg>
+                </div>
+
+                <div class="btn" onclick="triggerShare();">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-share-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"
+                        />
+                    </svg>
+                </div>
+
+                <div class="dbl-icon btn" onclick="toggleFullScreen(this);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-fullscreen" viewBox="0 0 16 16">
+                        <path
+                            d="M1.5 1a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4A1.5 1.5 0 0 1 1.5 0h4a.5.5 0 0 1 0 1h-4zM10 .5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 16 1.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5zM.5 10a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 0 14.5v-4a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v4a1.5 1.5 0 0 1-1.5 1.5h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5z"
+                        />
+                    </svg>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        class="bi bi-fullscreen-exit"
+                        viewBox="0 0 16 16"
+                    >
+                        <path
+                            d="M5.5 0a.5.5 0 0 1 .5.5v4A1.5 1.5 0 0 1 4.5 6h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5zm5 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 10 4.5v-4a.5.5 0 0 1 .5-.5zM0 10.5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 6 11.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5zm10 1a1.5 1.5 0 0 1 1.5-1.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4z"
+                        />
+                    </svg>
+                </div>
+            </div>
+
+            <section id="custom_page" class="custom-page">
+                <div class="cont">
+                    <form id="new-counter-form">
+                        <div class="top">
+                            <h4>Create your own countdown..</h4>
+                            <div class="close-logo" onclick="hideCreatePage();">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="30"
+                                    height="30"
+                                    fill="currentColor"
+                                    class="bi bi-x"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="input-text">
+                            <input type="text" id="msg-input" required value="Happy Birthday" spellcheck="false" />
+                            <label for="objective-function">Message</label>
+                        </div>
+
+                        <div class="input-dt">
+                            <input type="datetime-local" id="date-time-input" required style="color: wheat" />
+                            <label for="date-input">Date-Time</label>
+                        </div>
+
+                        <button type="submit">Create</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        <script src="./js/main.js"></script>
+
+        <script>
+            const hideCreatePage = () => document.getElementById("custom_page").classList.toggle("active");
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <script>
+            anime
+                .timeline({ loop: true })
+                .add({
+                    targets: ".ml15 .word",
+                    scale: [14, 1],
+                    opacity: [0, 1],
+                    easing: "easeOutCirc",
+                    duration: 800,
+                    delay: (el, i) => 800 * i,
+                })
+                .add({
+                    targets: ".ml15",
+                    opacity: 0,
+                    duration: 1000,
+                    easing: "easeOutExpo",
+                    delay: 1000,
+                });
+        </script>
+    </body>
+</html>
