@@ -1,6 +1,6 @@
 @font-face {
     font-family: "montage";
-    src: url(../font/Montage.eot) format("eot"), url(../font/Montage.woff) format("woff");
+    src: url(/font/montage.eot) format("eot"), url(/font/montage.woff) format("woff");
 }
 
 * {
