@@ -48,6 +48,10 @@ body {
 
 main {
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    gap: 1rem;
 }
 
 .countdown-display {
