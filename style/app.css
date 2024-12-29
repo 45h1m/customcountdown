@@ -47,7 +47,6 @@ body {
 }
 
 main {
-    padding: 0 8%;
     height: 100%;
 }
 
@@ -145,7 +144,7 @@ body.complete .countdown-display {
     word-spacing: 0.7rem;
     text-align: center;
     transform: skew(-10deg);
-    padding: 1em;
+    padding-top: 1rem;
 }
 
 #msg-display span {
