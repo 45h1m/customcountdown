@@ -77,8 +77,8 @@ function parseUrlData() {
         return data;
     } catch (err) {
         return {
-            time: new Date("1/1/2025"),
-            msg: "New Year 2025",
+            time: new Date("1/1/2026"),
+            msg: "New Year 2026",
         };
     }
 }
